@@ -1,0 +1,6 @@
+framework module iOS_Plugin_Monitoring {
+  umbrella header "iOS_Plugin_Monitoring.h"
+  export *
+
+  module * { export * }
+}

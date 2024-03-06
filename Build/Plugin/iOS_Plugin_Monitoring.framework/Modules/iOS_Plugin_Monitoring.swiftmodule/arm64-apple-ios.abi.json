@@ -1,0 +1,267 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iOS_Plugin_Monitoring"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RAMUsageMonitor",
+        "printedName": "RAMUsageMonitor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "instance",
+            "printedName": "instance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RAMUsageMonitor",
+                "printedName": "iOS_Plugin_Monitoring.RAMUsageMonitor",
+                "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC8instanceACvpZ",
+            "mangledName": "$s21iOS_Plugin_Monitoring15RAMUsageMonitorC8instanceACvpZ",
+            "moduleName": "iOS_Plugin_Monitoring",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RAMUsageMonitor",
+                    "printedName": "iOS_Plugin_Monitoring.RAMUsageMonitor",
+                    "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC8instanceACvgZ",
+                "mangledName": "$s21iOS_Plugin_Monitoring15RAMUsageMonitorC8instanceACvgZ",
+                "moduleName": "iOS_Plugin_Monitoring",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timer",
+            "printedName": "timer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Dispatch.DispatchSourceTimer)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchSourceTimer",
+                    "printedName": "any Dispatch.DispatchSourceTimer",
+                    "usr": "c:objc(pl)OS_dispatch_source_timer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC5timer33_ECE656B2B13377706863B9C7015CBFF0LLSo0a17_dispatch_source_F0_pSgvp",
+            "mangledName": "$s21iOS_Plugin_Monitoring15RAMUsageMonitorC5timer33_ECE656B2B13377706863B9C7015CBFF0LLSo0a17_dispatch_source_F0_pSgvp",
+            "moduleName": "iOS_Plugin_Monitoring",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "memorySamples",
+            "printedName": "memorySamples",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Double]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC13memorySamples33_ECE656B2B13377706863B9C7015CBFF0LLSaySdGvp",
+            "mangledName": "$s21iOS_Plugin_Monitoring15RAMUsageMonitorC13memorySamples33_ECE656B2B13377706863B9C7015CBFF0LLSaySdGvp",
+            "moduleName": "iOS_Plugin_Monitoring",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Function",
+            "name": "StartMonitoring",
+            "printedName": "StartMonitoring()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC05StartC0yyF",
+            "mangledName": "$s21iOS_Plugin_Monitoring15RAMUsageMonitorC05StartC0yyF",
+            "moduleName": "iOS_Plugin_Monitoring",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "StopMonitoring",
+            "printedName": "StopMonitoring()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC04StopC0SSyF",
+            "mangledName": "$s21iOS_Plugin_Monitoring15RAMUsageMonitorC04StopC0SSyF",
+            "moduleName": "iOS_Plugin_Monitoring",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21iOS_Plugin_Monitoring15RAMUsageMonitorC",
+        "mangledName": "$s21iOS_Plugin_Monitoring15RAMUsageMonitorC",
+        "moduleName": "iOS_Plugin_Monitoring",
+        "isOpen": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iOS_Plugin_Monitoring"
+      },
+      {
+        "kind": "Function",
+        "name": "StartMonitoring",
+        "printedName": "StartMonitoring()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)StartMonitoring",
+        "mangledName": "$s21iOS_Plugin_Monitoring05StartC0yyF",
+        "moduleName": "iOS_Plugin_Monitoring",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "StopMonitoring",
+        "printedName": "StopMonitoring()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)StopMonitoring",
+        "mangledName": "$s21iOS_Plugin_Monitoring04StopC0SPys4Int8VGSgyF",
+        "moduleName": "iOS_Plugin_Monitoring",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/alvaro\/Desktop\/iOSNativePluginUnity\/Native Swift Plugin\/iOS Plugin Monitoring\/UsageMonitor.swift",
+      "kind": "Array",
+      "offset": 337,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}
